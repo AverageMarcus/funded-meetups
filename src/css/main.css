@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 106%;
+  line-height: 1.4;
+  background: #F9F8F8;
+  color: #272838;
+}
+
+main {
+  max-width: 900px;
+  height: 100%;
+  min-height: 100vh;
+  text-align: left;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+a {
+  color: #7E7F9A;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #D2958B;
+}
+
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 1em 0;
+}
