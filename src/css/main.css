@@ -15,6 +15,10 @@ html, body {
   color: #272838;
 }
 
+.hide {
+  display: none;
+}
+
 main {
   max-width: 900px;
   height: 100%;
@@ -22,10 +26,6 @@ main {
   text-align: left;
   padding: 20px;
   margin: 0 auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
 }
 
 a {
@@ -37,11 +37,59 @@ a:hover {
   color: #D2958B;
 }
 
+input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+
+hr {
+  border: 1px solid #272838;
+  margin: 1em auto;
+  width: 80%;
+}
 
 ul {
   list-style: none;
+  padding: 0 20px;
 }
 
 ul li {
   margin: 1em 0;
+}
+
+.site-title, .site-description {
+  text-align: center;
+}
+
+.search input[type="text"] {
+  display: block;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.country {
+  background: #7E7F9A;
+  color: #F9F8F8;
+  font-size: 1.4em;
+  text-align: center;
+  padding: .2em;
+  border-radius: 4px;
+}
+
+.city {
+  background: #7E7F9A;
+  color: #F9F8F8;
+  font-size: 1.1em;
+  text-align: center;
+  padding: .2em 1em;
+  margin: .4em 0;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.meetup-title {
+  margin: 1em 0 .3em;
+}
+
+.meetup p {
+  margin-top: 0;
 }

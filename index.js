@@ -7,7 +7,7 @@ Metalsmith(__dirname)
   .metadata({
     site: {
       title: 'Funded Meetups',
-      description: 'A collection of meetups offering support with speaker expenses'
+      description: 'A collection of meetups offering support to speakers to help cover travel expenses.'
     }
   })
   .use(meetups())

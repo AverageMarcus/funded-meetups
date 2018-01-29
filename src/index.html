@@ -6,29 +6,36 @@
   </head>
   <body>
     <main>
-      <h1>{{site.title}}</h1>
-      <h3>{{site.description}}</h3>
+      <h1 class="site-title">{{site.title}}</h1>
+      <p class="site-description">{{site.description}}</p>
 
       <div class="search">
-        <!-- TODO -->
+        <input type="text" placeholder="Search..." />
       </div>
       <div class="filters">
         <!-- TODO -->
       </div>
 
+      <hr />
+
       {{#each meetups}}
-        <h4>{{country}}</h4>
-        {{#each cities}}
-          <h5>{{city}}</h5>
-          <ul>
-            {{#each meetups}}
-              <li>
-                <strong>Name:</strong> <a href="{{link}}">{{name}}</a><br/>
-                <strong>Support available:</strong> {{support}}
-              </li>
-            {{/each}}
-          </ul>
-        {{/each}}
+        <div data-country="{{country}}">
+          <div class="country">{{country}}</div>
+          {{#each cities}}
+            <div data-city="{{city}}">
+              <div class="city">{{city}}</div>
+              <ul>
+                {{#each meetups}}
+                  <li class="meetup">
+                    <h4 class="meetup-title"><a href="{{link}}">{{name}}</a></h4>
+                    <strong>Support available:</strong> {{support}}
+                    <p>{{description}}</p>
+                  </li>
+                {{/each}}
+              </ul>
+            </div>
+          {{/each}}
+        </div>
       {{/each}}
     </main>
 
