@@ -30,6 +30,11 @@
                     <h4 class="meetup-title"><a href="{{link}}">{{name}}</a></h4>
                     <strong>Support available:</strong> {{support}}
                     <p>{{description}}</p>
+                    <ul class="tags">
+                      {{#each tags}}
+                        <li class="tag">{{this}}</li>
+                      {{/each}}
+                    </ul>
                   </li>
                 {{/each}}
               </ul>

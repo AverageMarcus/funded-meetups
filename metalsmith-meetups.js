@@ -33,6 +33,8 @@ module.exports = function() {
   return function(files, metalsmith, done) {
     const meetups = Object.keys(files).filter(key => key.indexOf('meetups/') === 0);
     const parsedMeetups = [];
+    const tags = new Set();
+
     meetups.forEach(key => {
       const meetup = files[key];
 
@@ -41,12 +43,17 @@ module.exports = function() {
       let country = parsedMeetups.find(item => item.country === meetup.country);
       let city = country.cities.find(item => item.city === meetup.city);
       city.meetups.push(meetup);
+
+      if (meetup.tags) {
+        meetup.tags.forEach(tag => tags.add(tag));
+      }
     });
 
     sortMeetups(parsedMeetups);
 
     const metadata = metalsmith.metadata();
     metadata.meetups = parsedMeetups;
+    metadata.tags = Array.from(tags);
     done();
   };
 }

@@ -86,10 +86,62 @@ ul li {
   display: inline-block;
 }
 
+.meetup {
+  margin-bottom: 2em;
+}
+
 .meetup-title {
   margin: 1em 0 .3em;
 }
 
 .meetup p {
-  margin-top: 0;
+  margin: 0;
+}
+
+.tags {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tags li {
+  margin: 0;
+  display: inline-block;
+}
+
+.tag {
+  display: inline-block;
+  background: #F3DE8A;
+  color: #7E7F9A;
+  border-radius: 3px 0 0 3px;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+
+.tag::before {
+  background: #F9F8F8;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 7px;
+  left: 10px;
+  position: absolute;
+  width: 7px;
+  top: 9px;
+}
+
+.tag::after {
+  background: #F9F8F8;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #F3DE8A;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
 }
