@@ -1,5 +1,5 @@
 ---
-name: Design Exchange Nottingham
+name: Design Exchange Nottingham (DXN)
 link: http://dxnevent.com/
 support: up to £300
 country: United Kingdom
