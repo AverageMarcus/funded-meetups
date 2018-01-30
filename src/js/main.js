@@ -10,8 +10,9 @@
       var title = meetup.querySelector('.meetup-title').innerText.trim().toLowerCase();
       var city = meetup.parentNode.parentNode.dataset['city'].toLowerCase();
       var country = meetup.parentNode.parentNode.parentNode.dataset['country'].toLowerCase();
+      var tags = meetup.querySelector('.tags').innerText.trim().toLowerCase();
 
-      if (title.indexOf(searchTerm) >= 0 || city.indexOf(searchTerm) >= 0 || country.indexOf(searchTerm) >= 0) {
+      if (title.indexOf(searchTerm) >= 0 || city.indexOf(searchTerm) >= 0 || country.indexOf(searchTerm) >= 0 || tags.indexOf(searchTerm) >= 0) {
         meetup.classList.remove('hide');
       } else {
         meetup.classList.add('hide');
