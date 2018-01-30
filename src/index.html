@@ -1,37 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{{site.title}}</title>
-    <meta name="description" content="{{site.description}}" />
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{site.title}}">
-    <meta name="twitter:description" content="{{site.description}}">
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="{{site.title}}" />
-    <meta property="og:site_name" content="{{site.title}}"/>
-    <meta property="og:description" content="{{site.description}}" />
-    <meta property="og:type" content="website" />
-
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="{{site.title}}">
-    <meta itemprop="description" content="{{site.description}}">
-
-    <!-- Twitter Do Not Track -->
-    <meta name="twitter:dnt" content="on">
-
-    <link rel="stylesheet" href="css/main.css" />
+    {{> head}}
   </head>
   <body>
     <main>
-      <h1 class="site-title"><a href="/">{{site.title}}</a></h1>
-      <p class="site-description">{{site.description}}</p>
+      {{> header}}
 
       <a href="/submit" class="new-meetup-button">Add New Meetup</a>
 
@@ -69,6 +43,8 @@
         </div>
       {{/each}}
     </main>
+
+    {{> footer}}
 
     <script src="js/main.js"></script>
   </body>

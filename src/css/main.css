@@ -56,6 +56,13 @@ ul li {
   margin: 1em 0;
 }
 
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+}
+
 .site-title, .site-description {
   text-align: center;
 }

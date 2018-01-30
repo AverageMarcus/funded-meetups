@@ -12,7 +12,8 @@ Metalsmith(__dirname)
   })
   .use(meetups())
   .use(inplace({
-    engine: 'handlebars'
+    engine: 'handlebars',
+    partials: 'src/partials'
   }))
   .build(function(err) {
     if (err) throw err;
