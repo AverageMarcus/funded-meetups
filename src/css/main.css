@@ -145,3 +145,31 @@ ul li {
   right: 0;
   top: 0;
 }
+
+.new-meetup-button {
+  display: block;
+  margin: 0 auto 5px;
+  text-align: center;
+}
+
+.new-meetup {
+  margin: 0 auto;
+}
+
+.new-meetup label strong {
+  display: block;
+}
+
+.new-meetup label input,
+.new-meetup label textarea {
+  width: 100%;
+  font-size: 1.8em;
+}
+
+.new-meetup input[type=submit] {
+  float: right;
+  margin: 10px 0;
+  -webkit-appearance: button;
+  font-size: 1.8em;
+  background: transparent;
+}
