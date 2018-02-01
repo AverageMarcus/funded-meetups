@@ -96,6 +96,11 @@ footer {
 
 .meetup {
   margin-bottom: 2em;
+  padding: .5em;
+}
+
+.meetup:hover {
+  background: rgba(210, 203, 203, 0.2);
 }
 
 .meetup-title {
@@ -152,6 +157,12 @@ footer {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.fix-link {
+  float: right;
+  font-size: 0.7em;
+  font-weight: normal;
 }
 
 .new-meetup-button {
