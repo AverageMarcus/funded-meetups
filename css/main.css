@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 106%;
+  line-height: 1.4;
+  background: #F9F8F8;
+  color: #272838;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  max-width: 900px;
+  height: 100%;
+  min-height: 100vh;
+  text-align: left;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+a {
+  color: #7E7F9A;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #D2958B;
+}
+
+input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+
+hr {
+  border: 1px solid #272838;
+  margin: 1em auto;
+  width: 80%;
+}
+
+ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+ul li {
+  margin: 1em 0;
+}
+
+footer {
+  clear: both;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+}
+
+.site-title, .site-description {
+  text-align: center;
+}
+
+.search input[type="text"] {
+  display: block;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.country {
+  background: #7E7F9A;
+  color: #F9F8F8;
+  font-size: 1.4em;
+  text-align: center;
+  padding: .2em;
+  border-radius: 4px;
+}
+
+.city {
+  background: #7E7F9A;
+  color: #F9F8F8;
+  font-size: 1.1em;
+  text-align: center;
+  padding: .2em 1em;
+  margin: .4em 0;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.meetup {
+  margin-bottom: 2em;
+  padding: .5em;
+}
+
+.meetup:hover {
+  background: rgba(210, 203, 203, 0.2);
+}
+
+.meetup-title {
+  margin: 1em 0 .3em;
+}
+
+.meetup p {
+  margin: 0;
+}
+
+.tags {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tags li {
+  margin: 0;
+  display: inline-block;
+}
+
+.tag {
+  display: inline-block;
+  background: #F3DE8A;
+  color: #7E7F9A;
+  border-radius: 3px 0 0 3px;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+
+.tag::before {
+  background: #F9F8F8;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 7px;
+  left: 10px;
+  position: absolute;
+  width: 7px;
+  top: 9px;
+}
+
+.tag::after {
+  background: #F9F8F8;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #F3DE8A;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fix-link {
+  float: right;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+.new-meetup-button {
+  display: block;
+  margin: 0 auto 5px;
+  text-align: center;
+}
+
+.new-meetup {
+  margin: 0 auto;
+}
+
+.new-meetup label strong {
+  display: block;
+}
+
+.new-meetup label input,
+.new-meetup label textarea {
+  width: 100%;
+  font-size: 1.8em;
+}
+
+.new-meetup input[type=submit] {
+  float: right;
+  margin: 10px 0;
+  -webkit-appearance: button;
+  font-size: 1.8em;
+  background: transparent;
+}

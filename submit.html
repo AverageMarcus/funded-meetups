@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Funded Meetups</title>
+    <meta name="description" content="A collection of meetups offering support to speakers to help cover travel expenses." />
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Funded Meetups">
+    <meta name="twitter:description" content="A collection of meetups offering support to speakers to help cover travel expenses.">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Funded Meetups" />
+    <meta property="og:site_name" content="Funded Meetups"/>
+    <meta property="og:description" content="A collection of meetups offering support to speakers to help cover travel expenses." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Funded Meetups">
+    <meta itemprop="description" content="A collection of meetups offering support to speakers to help cover travel expenses.">
+    
+    <!-- Twitter Do Not Track -->
+    <meta name="twitter:dnt" content="on">
+    
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="site-title"><a href="/">Funded Meetups</a></h1>
+      <p class="site-description">A collection of meetups offering support to speakers to help cover travel expenses.</p>
+
+      <p>
+        To add a new meetup please fill out the form below. This will populate a new file on GitHub that you can submit as a pull request.
+      </p>
+
+      <form class="new-meetup">
+        <div>
+          <label>
+            <strong>Name</strong>
+            <input name="name" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <strong>Link</strong>
+            <input name="link" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <strong>Support Available</strong>
+            <input name="support" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <strong>Country</strong>
+            <input name="country" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <strong>Town/City</strong>
+            <input name="city" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <strong>Description</strong>
+            <textarea name="description"></textarea>
+          </label>
+        </div>
+        <div>
+          <label>
+            <strong>Tags (comma seperated)</strong>
+            <input name="tags" />
+          </label>
+        </div>
+        <input type="submit" value="Add Meetup" />
+      </form>
+    </main>
+
+    <footer>
+        <hr>
+      <a href="https://github.com/AverageMarcus/funded-meetups">Source available on GitHub</a>
+    </footer>
+
+    <script src="js/submit.js"></script>
+  </body>
+</html>
